@@ -1,6 +1,6 @@
 <?XML version="1.1" encoding="UTF-8"?>
 <!DOCTYPE keyboard PUBLIC " " "file://localhost/System/Library/DTDs/KeyboardLayout.dtd">
-<!--Last edited by zangke version 1.0 on 2019-09-06 at 18:59 (CST)-->
+<!--Last edited by zangke&yuanuo version 1.2 on 2023-07-03 at 08:00 (CST)-->
 <!---->
 <keyboard group="126" id="-29798" name="Himalaya" maxout="1">
     <layouts>
@@ -32,6 +32,41 @@
             <modifier keys="anyShift anyOption"/>
         </keyMapSelect>
     </modifierMap>
+    <modifierMap id="commonModifiers" defaultIndex="4">
+            <keyMapSelect mapIndex="0">
+                  <modifier keys="anyShift? caps? command"/>
+            </keyMapSelect>
+            <keyMapSelect mapIndex="1">
+                  <modifier keys="anyShift caps?"/>
+                  <modifier keys="anyShift? caps"/>
+            </keyMapSelect>
+            <keyMapSelect mapIndex="2">
+                  <modifier keys="anyOption"/>
+                  <modifier keys="caps option command?"/>
+                  <modifier keys="caps? option command"/>
+            </keyMapSelect>
+            <keyMapSelect mapIndex="3">
+                  <modifier keys="anyShift caps? anyOption command?"/>
+            </keyMapSelect>
+            <keyMapSelect mapIndex="4">
+                  <modifier keys=""/>
+                  <modifier keys="caps option? rightOption command?"/>
+            </keyMapSelect>
+            <keyMapSelect mapIndex="5">
+                  <modifier keys="option? rightOption command"/>
+            </keyMapSelect>
+            <keyMapSelect mapIndex="6">
+                  <modifier keys="anyShift? caps? anyOption? anyControl"/>
+                  <modifier keys="anyShift? anyOption? command? anyControl"/>
+                  <modifier keys="anyShift caps anyOption command rightControl"/>
+                  <modifier keys="anyShift caps rightOption? command anyControl"/>
+                  <modifier keys="rightShift? caps anyOption command anyControl"/>
+                  <modifier keys="anyShift caps anyOption command control"/>
+                  <modifier keys="anyShift caps option? command anyControl"/>
+                  <modifier keys="shift? caps anyOption command anyControl"/>
+                  <modifier keys="caps? anyOption? command? anyControl"/>
+            </keyMapSelect>
+      </modifierMap>
     <keyMapSet id="ANSI">
         <keyMap index="0">
             <key code="0" action="འ"/>
